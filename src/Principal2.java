@@ -190,7 +190,7 @@ public class Principal2 extends javax.swing.JFrame {
         txtNumeroMenor.setRows(5);
         jScrollPane3.setViewportView(txtNumeroMenor);
 
-        jPanel11.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 180, -1));
+        jPanel11.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 180, 100));
 
         getContentPane().add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 210, 130));
 
@@ -292,9 +292,7 @@ public class Principal2 extends javax.swing.JFrame {
         
         }
         
-        
-        
-
+       
 
     }//GEN-LAST:event_cmdMostrarActionPerformed
 
