@@ -42,7 +42,7 @@ public class Principal2 extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         cmdCrear = new javax.swing.JButton();
         cmdLlenarManual = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        txtLlenarAuto = new javax.swing.JButton();
         cmdMostrar = new javax.swing.JButton();
         cmdBorrar = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
@@ -132,13 +132,13 @@ public class Principal2 extends javax.swing.JFrame {
         });
         jPanel8.add(cmdLlenarManual, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 110, -1));
 
-        jButton3.setText("Llenar Auto");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        txtLlenarAuto.setText("Llenar Auto");
+        txtLlenarAuto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                txtLlenarAutoActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 80, 110, -1));
+        jPanel8.add(txtLlenarAuto, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 80, 110, -1));
 
         cmdMostrar.setText("Mostrar");
         cmdMostrar.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +156,7 @@ public class Principal2 extends javax.swing.JFrame {
         });
         jPanel8.add(cmdBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 110, -1));
 
-        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 140, 180));
+        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 160, 200));
 
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder("Numero Mayor"));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -255,6 +255,7 @@ public class Principal2 extends javax.swing.JFrame {
 
     private void cmdMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMostrarActionPerformed
         // TODO add your handling code here:
+        
         String ne,se,my,mn;
         int acum=0;
         int product = 1;
@@ -305,7 +306,7 @@ public class Principal2 extends javax.swing.JFrame {
         txtNumeros.requestFocusInWindow();
     }//GEN-LAST:event_cmdBorrarActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void txtLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLlenarAutoActionPerformed
         // TODO add your handling code here:
         int n;
         for (int i=0; i<v.length; i++) {
@@ -315,7 +316,8 @@ public class Principal2 extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(this, "Vector Llenado Correctamente");
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+        
+    }//GEN-LAST:event_txtLlenarAutoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -357,7 +359,6 @@ public class Principal2 extends javax.swing.JFrame {
     private javax.swing.JButton cmdCrear;
     private javax.swing.JButton cmdLlenarManual;
     private javax.swing.JButton cmdMostrar;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
@@ -375,6 +376,7 @@ public class Principal2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JButton txtLlenarAuto;
     private javax.swing.JTextArea txtNumeroMayor;
     private javax.swing.JTextArea txtNumeroMenor;
     private javax.swing.JTextField txtNumeros;
